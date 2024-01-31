@@ -5,6 +5,7 @@ import pl.piomin.services.grpc.account.model.AccountProto;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
 
 public class AccountRepository {
 
@@ -22,7 +23,7 @@ public class AccountRepository {
     }
 
     public List<AccountProto.Account> findByCustomer(int customerId) {
-        return accounts.stream().filter(it -> it.getCustomerId() == customerId).toList();
+        return accounts.stream().filter(it -> it.getCustomerId() == customerId).collect(Collectors.toList());
     }
 
     public AccountProto.Account findByNumber(String number) {
