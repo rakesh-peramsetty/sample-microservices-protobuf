@@ -36,6 +36,7 @@
         <module>account-service-grpc</module>
         <module>customer-service-grpc</module>
         <module>discovery-service</module>
+        <module>conductor</module>
     </modules>
 
 </project>

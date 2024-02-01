@@ -1,0 +1,7 @@
+spring.application.name: conductor
+server.port: 8081
+grpc.server.port: 9001
+spring.output.ansi.enabled: always
+
+management.endpoints.web.exposure.include: metrics
+management.endpoint.metrics.enabled: true
